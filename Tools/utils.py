@@ -1,7 +1,7 @@
 import os
 
 SCORES_FILE_NAME = "Tools/Scores.txt"
-BAD_RETURN_CODE = 0
+BAD_RETURN_CODE = 404
 
 
 def clear_screen():

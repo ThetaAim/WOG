@@ -1,10 +1,8 @@
-from Tools.utils import SCORES_FILE_NAME
+from Tools.utils import SCORES_FILE_NAME, BAD_RETURN_CODE
 from flask import Flask, render_template
 import os
 
 app = Flask(__name__, template_folder='/Users/user/Desktop/Devops-Classes/Vog2/templates/')
-app.config['DEBUG'] = False
-
 
 @app.route('/')
 def score_server():
@@ -12,8 +10,15 @@ def score_server():
         with open(f"../{SCORES_FILE_NAME}", 'r+') as file:
             exist_score = file.read()
             return render_template('index.html', title="Scores Game", SCORE=exist_score)
+
+    elif not os.path.exists(f'../{SCORES_FILE_NAME}'):
+        with open(f'../{SCORES_FILE_NAME}', 'w') as file:
+            file.write(str('0'))
+            exist_score = 0
+            return render_template('index.html', title="Scores Game", SCORE=exist_score)
     else:
-        return render_template('not_found.html', title="Something went wrong...", ERROR="Scores file not found")
+        return render_template('not_found.html', title="Something went wrong...", ERROR=f"Scores file not found "
+                                                                                        f"{BAD_RETURN_CODE}")
 
 
 if __name__ == '__main__':
