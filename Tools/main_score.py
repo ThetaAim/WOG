@@ -2,7 +2,12 @@ from Tools.utils import SCORES_FILE_NAME, BAD_RETURN_CODE
 from flask import Flask, render_template
 import os
 
-app = Flask(__name__, template_folder='/Users/user/Desktop/Devops-Classes/Vog2/templates/')
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+template_folder = os.path.join(parent_dir, 'templates')
+app = Flask(__name__, template_folder=template_folder)
+# app = Flask(__name__, template_folder='/Users/user/Desktop/Devops-Classes/WOG/templates/')
+
 
 @app.route('/')
 def score_server():
@@ -22,4 +27,4 @@ def score_server():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5040, debug=False)
+    app.run(host='0.0.0.0', port=5040, debug=True)
