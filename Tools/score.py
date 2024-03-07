@@ -1,4 +1,4 @@
-from Tools.utils import SCORES_FILE_NAME
+from .utils import SCORES_FILE_NAME, BAD_RETURN_CODE
 import os
 
 
