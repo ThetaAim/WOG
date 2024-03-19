@@ -3,11 +3,9 @@ from flask import Flask, render_template
 import os
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
-# parent_dir = os.path.dirname(current_dir)
 template_folder = os.path.join(current_dir, 'templates')
 app = Flask(__name__, template_folder=template_folder)
 # app = Flask(__name__, template_folder='/Users/user/Desktop/Devops-Classes/WOG/templates/')
-
 
 @app.route('/')
 def score_server():
