@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: orenohayon/wog:v7
+    ports:
+      - "8090:5040"
+    networks:
+      - mynet
+
+networks:
+  mynet:
