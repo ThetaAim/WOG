@@ -11,3 +11,8 @@ Take a spin on the Currency Roulette wheel and test your luck in the dynamic wor
 Memory Master:
 Prepare to exercise your memory muscles in Memory Master, a challenging game of recall and concentration. The computer will present you with a sequence of numbers to memorize. Pay close attention and commit the sequence to memory, as you'll need to recall it accurately to advance to the next level. How many numbers can you remember before the challenge becomes too great?
 
+Rules:
+
+Notes:
+
+Fixes:
