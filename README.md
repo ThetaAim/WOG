@@ -15,4 +15,4 @@ Rules:
 
 Notes:
 
-Fixes:
+How to:
