@@ -1,3 +1,4 @@
+
 # The Currency Roulette Game Game
 from Tools.score import add_score
 from Tools.utils import clear_screen as cls
@@ -57,10 +58,8 @@ def play(difficulty):
     if get_compare_value:
         print(f'\nCorrect! {random_dollars}$ is approximately {round(dollars_in_nis, 2)} ILS ')
         time.sleep(1)
-        return add_score(difficulty)
+        print(f'\nYou won {add_score(difficulty)} points!')
     else:
         print(f'\nNice try, but you are wrong! {random_dollars}$ is {round(dollars_in_nis, 2)} ILS')
         time.sleep(1)
         return False
-
-

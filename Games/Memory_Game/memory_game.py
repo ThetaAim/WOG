@@ -56,10 +56,7 @@ def play(difficulty):
     is_equal = is_list_equal(user_list, generated_list)
 
     if is_equal:
-        print(f'\nCorrect!')
+        print(f'\nYou won {add_score(difficulty)} points!')
         print(f'You remembered {numbers_correct} number(s) correct!')
-        add_score(difficulty)
     else:
         print(f'\nAlmost there! You remembered only {numbers_correct} number(s) correct!')
-
-

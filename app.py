@@ -1,6 +1,6 @@
-from Guess_Game.guess_game import play as guess_play
-from Roulette_Game.currency_roulette_game import play as curl_play
-from Memory_Game.memory_game import play as memo_play
+from Games.Guess_Game.guess_game import play as guess_play
+from Games.Roulette_Game.currency_roulette_game import play as curl_play
+from Games.Memory_Game.memory_game import play as memo_play
 from Tools.utils import clear_screen as cls
 
 

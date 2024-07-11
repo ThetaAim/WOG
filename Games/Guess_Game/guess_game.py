@@ -24,7 +24,6 @@ def get_guess_from_user(difficulty):
 
 def compare_results(guess, secret_num):
     if guess == secret_num:
-        print('You win!')
         return True
     else:
         print('You lose!')
@@ -41,10 +40,5 @@ def play(difficulty):
     guessed_by_user = get_guess_from_user(difficulty)
 
     if compare_results(guessed_by_user, secret_number):
-        add_score(difficulty)
-
-
-
-
-
-
+        print('You win!')
+        print(f'\nYou won {add_score(difficulty)} points!')
