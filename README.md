@@ -1,3 +1,4 @@
+# WOG
 Welcome to World of Games!
 
 Embark on a thrilling adventure through a diverse array of mini-games that will challenge your skills, test your memory, and keep you entertained for hours.
